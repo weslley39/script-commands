@@ -9,7 +9,7 @@
 # @raycast.authorURL https://github.com/mujibazizi
 # @raycast.description Start a Google Meet session
 
-open https://meet.google.com/new
+open https://meet.google.com/new?authuser=1
 
 MAX_TRIES=10
 TRIES=0
@@ -51,7 +51,7 @@ while true; do
   fi
 
   # Next, we want to make sure it's not still loading.
-  if [[ $URL == *"new"* ]]; then
+  if [[ $URL == *"new?authuser=1"* ]]; then
     continue
   fi
 
